@@ -5,10 +5,9 @@ More information about the Plugin please see below, or at https://github.com/myG
 
 == Install
 Put this line into Gemfile:
-  gem "my_responds_to_parent", :git => "git://github.com/quyen/my_responds_to_parent.git"
+  gem 'pubmed_query_tool', :git => "git://github.com/quyen/pubmed_query_tool.git"
 
-PubmedQueryTool
-===============
+= pubmed_query_tool Plugin
 
 A simple Ruby on Rails plugin to interface with the PubMed database through NCBI's entrez API.
 
@@ -25,8 +24,7 @@ Please note that it is up to the implementing application to adhere to NCBI's te
 (http://www.ncbi.nlm.nih.gov/entrez/query/static/eutils_help.html)
 
 
-Example
-=======
+== Example
 
 p = PubmedQuery.new("email@example.com","example application title")
 doc = p.fetch(16845108)
